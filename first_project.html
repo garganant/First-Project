@@ -1,0 +1,361 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!--Import Google Icon Font-->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <title>My First Project</title>
+
+  <style>
+
+    header{
+
+      background: url(man.jpg);
+
+      background-size: cover;
+
+      background-position: center;
+
+      min-height: 800px;
+
+    }
+
+    @media screen and (max-width: 670px){
+
+      header{
+
+        min-height: 500px;
+
+      }
+
+    }
+
+    .section{
+
+      padding-top: 4vw;
+
+      padding-bottom: 4vw;
+
+    }
+
+    .tabs .indicator{
+
+      background-color: #1a237e;
+
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+
+      background: transparent;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <!-- navbar -->
+
+  <header>
+
+    <nav class="nav-wrapper transparent">
+
+      <div class="container">
+
+        <a href="#" class="brand-logo">Photo Ninja</a>
+
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+
+          <i class="material-icons">menu</i>
+
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+
+          <li><a href="#photos">Photo's</a></li>
+
+          <li><a href="#services">Services</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" class="tooltipped btn-floating btn-small pink" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="tooltipped btn-floating blue darken-4 btn-small" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="btn-floating btn-small blue tooltipped" data-tooltip="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+
+          <li><a href="#photos">Photo's</a></li>
+
+          <li><a href="#services">Services</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- photo / grid -->
+
+  <section class="container section scrollspy" id="photos">
+
+    <div class="row">
+
+      <div class="col s12 l4">
+
+          <img src="portrait.jpg" alt="" class="responsive-img materialboxed">
+
+      </div>
+
+      <div class="col s12 l6 offset-l1">
+
+        <h2 class="indigo-text text-darken-4">Portraits</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 l4 offset-l1 push-l7">
+
+          <img src="city.jpg" alt="" class="responsive-img materialboxed">
+
+      </div>
+
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+
+        <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 l4">
+
+          <img src="nature.jpg" alt="" class="responsive-img materialboxed">
+
+      </div>
+
+      <div class="col s12 l6 offset-l1">
+
+        <h2 class="indigo-text text-darken-4">Nature</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="stars.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+
+  <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">This is what I do...</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+          <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+  </div>
+  <div class="col s12 l6 offset-l2">
+    <ul class="tabs">
+   <li class="tab col s6">
+     <a href="#Photography" class="indigo-text text-darken-4">Photography</a>
+   </li>
+   <li class="tab col s6">
+     <a href="#Editing" class="indigo-text text-darken-4">Editing</a>
+   </li>
+    </ul>
+
+  <div class="col s12" id="Photography">
+    <p class="flow-text indigo-text text-darken-4">This aff wejcfajdfhji jfioa jadahaljkfhj jofj oddfjoalj ojdao joaja qjoaooeo ef oo oa dhaofflaofahflo o fafoaof .</p>
+  </div>
+  <div class="col s12" id="Editing">
+    <p class="flow-text indigo-text text-darken-4">This sfdjk v klkerajl ljha ah roaoa ioa rjaor aorp nice boy 54325 2323 4324 24 432 424 24 14 fdsg.</p>
+  </div>
+      </div>
+      </div>
+  </section>
+
+
+
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="street.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+
+  <!-- contact form -->
+<section class="container section scrollspy" id="contact">
+  <div class="row">
+    <div class="col s12 l5">
+      <h2 class="indigo-text text-darken-4">Enter your info</h2>
+      <p>ThIs iS sOmEtHiNg aMaZiNg gOiNg oN hErE. CoMe jOiN uS. It wIlL bE rEaLlY fUn iF yOu jOiN uS. Do yOu wIsH tO jOiN uS? WiLl yOu jOiN uS? YoU cAn jOiN uS eVeN aS aN aNoNyMoUs pErSoN iF yOu dOn'T wIsH tO rEvEaL yOuR iDeNtItY.</p>
+    </div>
+    <div class="col s12 l5 offset-l2">
+      <form class="" action="index.html" method="post">
+        <div class="input-field">
+          <i class="material-icons prefix yellow-text">email</i>
+          <input type="email" id="email">
+          <label for="email">your email here</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons red-text prefix">message</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">message</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix green-text">date_range</i>
+          <input type="text" class="datepicker" id="date">
+          <label for="date">select date</label>
+        </div>
+        <div class="input-field">
+          <p class="indigo-text">Services required:</p>
+          <p>
+          <label>
+            <input type="checkbox">
+            <span>Photography</span>
+          </label>
+          </p>
+          <p>
+          <label>
+            <input type="checkbox">
+            <span>Editing</span>
+          </label>
+          </p>
+          <p><label>
+          <input type="checkbox">
+            <span>Collage</span></label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button type="submit" name="button" class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- footer -->
+<footer class="grey darken-3 page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6">
+        <h4>About Me</h4>
+        <p>Thisgvsfs fjsdgjvrocndognt oerffert 32k4n4rw w4kn fkcgk 35n3 fsv mdg tk435je fs,vmewr j3n terklt345 .
+          Some fwrtnvlw krk35kj3wwkmertn345o3 evo34tn3 eertn3t dvmcg3nt3tjker t34otj vdy3n terog34 .</p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h4>Additional links</h4>
+        <p>
+        <a href="https://www.facebook.com/" class="" target="_blank">Facebook</a><br>
+        <a href="https://in.linkedin.com/" class="" target="_parent">LinkedIn</a><br>
+        <a href="https://twitter.com/" class="" target="_self">Twitter</a><br>
+        <a href="https://www.tumblr.com/" class="" target="_top">Tumblr</a><br>
+        <a href="https://github.com/" class="" target="_blank">Github</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">&copy;2018-Anant Corpration ltd.
+        </div>
+      </div>
+  </div>
+</footer>
+
+
+  <!-- Compiled and minified JavaScript -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+
+
+      $('.sidenav').sidenav();
+
+      $('.materialboxed').materialbox();
+
+      $('.parallax').parallax();
+
+      $('.tabs').tabs();
+
+      $('.datepicker').datepicker({
+        disableWeekends:true,
+        yearRange:10
+      });
+
+      $('.tooltipped').tooltip();
+
+      $('.scrollspy').scrollSpy();
+
+    });
+
+  </script>
+
+</body>
+
+</html>
