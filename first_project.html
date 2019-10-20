@@ -247,11 +247,10 @@
 <section class="container section scrollspy" id="contact">
   <div class="row">
     <div class="col s12 l5">
-      <h2 class="indigo-text text-darken-4">Enter your info</h2>
-      <p>ThIs iS sOmEtHiNg aMaZiNg gOiNg oN hErE. CoMe jOiN uS. It wIlL bE rEaLlY fUn iF yOu jOiN uS. Do yOu wIsH tO jOiN uS? WiLl yOu jOiN uS? YoU cAn jOiN uS eVeN aS aN aNoNyMoUs pErSoN iF yOu dOn'T wIsH tO rEvEaL yOuR iDeNtItY.</p>
+      <h2 class="indigo-text text-darken-3">Enter your info</h2>
     </div>
     <div class="col s12 l5 offset-l2">
-      <form class="" action="index.html" method="post">
+      <form id="someInput" action="#" method="post">
         <div class="input-field">
           <i class="material-icons prefix yellow-text">email</i>
           <input type="email" id="email">
@@ -287,7 +286,7 @@
           </p>
         </div>
         <div class="input-field center">
-          <button type="submit" name="button" class="btn">Submit</button>
+            <input type="submit" onclick="action()" value="Submit" name="button" class="btn">
         </div>
       </form>
     </div>
@@ -301,8 +300,7 @@
     <div class="row">
       <div class="col s12 l6">
         <h4>About Me</h4>
-        <p>Thisgvsfs fjsdgjvrocndognt oerffert 32k4n4rw w4kn fkcgk 35n3 fsv mdg tk435je fs,vmewr j3n terklt345 .
-          Some fwrtnvlw krk35kj3wwkmertn345o3 evo34tn3 eertn3t dvmcg3nt3tjker t34otj vdy3n terog34 .</p>
+        <p> .</p>
       </div>
       <div class="col s12 l4 offset-l2">
         <h4>Additional links</h4>
@@ -330,7 +328,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
   <script>
-
+    function action(){
+      alert("Your Form is Submitted");
+    }
     $(document).ready(function(){
 
 
